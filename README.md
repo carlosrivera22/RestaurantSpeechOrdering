@@ -5,5 +5,5 @@ To execute clone or download the repository and run the following:
 
   - python waiter.py
   
-To use, use your voice and specify the number of the option you want to select. 
+Use your voice and specify the number of the option you want to select. 
 
