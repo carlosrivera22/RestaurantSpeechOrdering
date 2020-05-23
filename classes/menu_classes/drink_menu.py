@@ -7,7 +7,7 @@ class DrinkMenu(AbstractMenu):
     def __init__(self):
         self.title = "DRINKS:"
         self.options = []
-        self.options.append(Option("Coca Cola",CocaColaAction()))
+        self.options.append(Option("Coca-Cola",CocaColaAction()))
         self.options.append(Option("Sprite",SpriteAction()))
         self.options.append(Option("Water",WaterAction()))
         self.options.append(Option("Back",ExitAction()))

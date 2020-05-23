@@ -38,7 +38,13 @@ class AbstractMenu(abc.ABC):
         while True:
             sr = SR()
             # selection = input("> ") 
-            selection = sr.get_speech_to_text()
+            selection = sr.get_speech_to_text().lower()
+            print(selection)
+            for i in range(0,len(self.options)):
+                option = self.options[i]
+                if selection == option.get_description().lower():
+                    return self.options[int(i)]
+
             if(self.represents_int(selection) and int(selection) <= len(self.options)):  
                 break  
             
